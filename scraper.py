@@ -17,6 +17,7 @@ f = open(filename, "w")
 
 headers = "title, Product_Name, Price\n"
 
+
 f.write(headers)
 
 for shoes in shoes_list:
@@ -24,6 +25,6 @@ for shoes in shoes_list:
     price = shoes.find("div", class_="product-listing-price").text
     print (shoes.div.a["href"])
 
-    f.write(title + "," + Product_Name + "," + Price + "\n")
+    f.write(title + "," + Product_type + "," + Price + "\n")
 
     f.close
